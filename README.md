@@ -22,3 +22,7 @@ Prototype of application to help calculate several thing used in wood working in
 ## TODO
 * Fix drawing of package
 * Add creating and removing dimensions of start product
+
+## Used Technologies
+* QT
+* C++
