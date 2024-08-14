@@ -151,7 +151,6 @@ void WoodCalculator::on_doubleSpinBox_thicknessAfterPlaning_valueChanged(double 
 void WoodCalculator::on_doubleSpinBox_cuttingAmountBottom_valueChanged(double value)
 {
     Q_UNUSED(value);
-    //calculateThicknessAfter();
 }
 
 void WoodCalculator::calculateCuttingAmountBottom()
@@ -232,7 +231,6 @@ void WoodCalculator::calculateGluePressure()
 void WoodCalculator::calculatePressPressure()
 {
     ui->spinBox_pressPressure->setValue( qRound( 0.01 * ui->doubleSpinBox_pressPressureRatio->value() * ui->doubleSpinBox_thicknessAfterPlaning->value() * ui->doubleSpinBox_widthAfterPlaning->value() ) );
-    //ui->spinBox_pressPressure->update();
 }
 
 int WoodCalculator::calculatePiecesInLine()
@@ -251,20 +249,12 @@ void WoodCalculator::calculatePackageWidth()
 
 int WoodCalculator::calculateLinesInPackage()
 {
-    //double boardThickness = ui->doubleSpinBox_thicknessAfterPlaning->value();
-    //int maxLines = ui->spinBox_maxPackageHeight->value() / boardThickness;
     int maxLinesInPackage = calculateMaxLinesInPackage();
-    //int totalPieces = ui->spinBox_piecesInPackage->value();
-    //int piecesInLine = ui->spinBox_piecesInLine->value();
 
     int linesInPackage = 0;
 
-    //if(piecesInLine > 0)
-        //linesInPackage = qMin( totalPieces / piecesInLine, maxLines );
-    //else
-        linesInPackage = maxLinesInPackage;
+    linesInPackage = maxLinesInPackage;
 
-    //linesInPackage = 33;
     ui->spinBox_linesInPackage->setValue(linesInPackage);
     calculatePackageHeight();
     return linesInPackage;
@@ -319,8 +309,6 @@ void WoodCalculator::calculateMaxPiecesInPress()
 {
     if(getGluedPieceWidth() > 0.1)
         ui->spinBox_maxPiecesInPress->setValue( ui->spinBox_maxWidthInPress->value() / getGluedPieceWidth() );
-
-    //updateGluingDrawing();
 }
 
 void WoodCalculator::calculateGluedBoardWidth()
@@ -373,9 +361,6 @@ void WoodCalculator::calculatePackageSizes()
         double totalLines = qCeil( totalPieces / piecesInLine );
 
         linesInPackage = qCeil( totalLines / packages );
-        //linesInPackage = totalLines / packages;
-
-        //qDebug() << totalLines << " / " << packages << " = " << linesInPackage;
     }
 
     ui->spinBox_linesInPackage->setValue( linesInPackage );
@@ -387,7 +372,6 @@ int WoodCalculator::calculatePackages()
     double totalPieces = ui->spinBox_totalPieces->value();
     double maxPiecesInPackage = calculateMaxPiecesInPackage();
     int packages = qCeil( totalPieces / maxPiecesInPackage );
-    //qDebug() << totalPieces << " / " << maxPiecesInPackage << " = " << packages;
     ui->spinBox_packages->setValue(packages);
     return packages;
 }
@@ -541,7 +525,6 @@ void WoodCalculator::on_doubleSpinBox_packageVolume_valueChanged(double value)
 void WoodCalculator::on_spinBox_maxPackageHeight_valueChanged(int value)
 {
     Q_UNUSED(value);
-    //calculateLinesInPackage();
     calculateMaxLinesInPackage();
     calculatePackageSizes();
 }
@@ -551,14 +534,12 @@ void WoodCalculator::on_spinBox_linesInPackage_valueChanged(int value)
     Q_UNUSED(value);
     calculatePackageHeight();
     calculatePiecesInPackage();
-    //calculatePackageSizes();
     updatePackagingDrawing();
 }
 
 void WoodCalculator::on_spinBox_piecesInPackage_valueChanged(int value)
 {
     Q_UNUSED(value);
-    //calculateLinesInPackageFromTotalPieces();
     calculateTotalLengthInPackage();
 }
 
@@ -670,15 +651,8 @@ void WoodCalculator::updatePackagingDrawing()
             paint.drawLine( dx + m, full_size - m - i * h,
                             dx + m + ui->spinBox_piecesInLine->value() * w, full_size - m - i * h );
 
-        //paint.setBrush(Qt::white);
-        //paint.drawEllipse( QPoint(dx + m + 0.5 * nw * w, full_size - 0.5 * nh * h - m), int(0.2 * full_size), int(0.2 * full_size));
-
         if ( d == 0 )
         {
-            //paint.setPen(Qt::red);
-
-
-
             for ( int i = 0 ; i <= calculatePiecesInLastLine() ; i++ )
                 paint.drawLine( dx + m + i * w, full_size - m - (lines - 1) * h,
                                 dx + m + i * w, full_size - m - lines * h );
@@ -686,8 +660,6 @@ void WoodCalculator::updatePackagingDrawing()
             paint.drawLine( dx + m, full_size - m - lines * h,
                             dx + m + calculatePiecesInLastLine() * w, full_size - m - lines * h );
 
-            //for ( int i = 0 ; i < calculatePiecesInLastLine() ; i++ )
-                //paint.drawRect( dx + m + i * w, full_size - m - lines * h, w, h );
             paint.drawText( dx + 0.1 * full_size, full_size + 20, "1 nippu x " + QString::number(calculatePiecesInLastPackage()) + " kpl");
 
 
@@ -727,16 +699,8 @@ void WoodCalculator::updateGluingDrawing()
     double nw = n * w;
 
     paint.setPen(Qt::darkGray);
-    //paint.setBrush(Qt::lightGray);
 
     paint.drawRect( 0, 0, m * nw, h );
-
-
-    //paint.setBrush(Qt::gray);
-    //paint.setBrush(Qt::BDiagPattern);
-
-    //paint.setPen(penBlack);
-    //paint.drawRect( 0, 0, m * nw + 1, h + 1 );
 
     for ( int i = 0 ; i < m ; i++ )
     {
