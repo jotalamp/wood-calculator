@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WoodCalculator</class>
+ <widget class="QMainWindow" name="WoodCalculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>824</width>
+    <height>907</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WoodCalculator</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="statusTip">
+       <string extracomment="Basic gluing"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhEmailCharactersOnly|Qt::ImhExclusiveInputMask|Qt::ImhFormattedNumbersOnly|Qt::ImhLatinOnly|Qt::ImhLowercaseOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly|Qt::ImhUrlCharactersOnly</set>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_planing">
+       <attribute name="title">
+        <string>Planing</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_4">
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_thicknessBeforePlaning">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Thickness before planing</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_thicknessBeforePlaning</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_thicknessBeforePlaning">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>28.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_widthBeforePlaning">
+          <property name="text">
+           <string>Width before planing</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_widthBeforePlaning</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_widthBeforePlaning">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>100.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_thicknessAfterPlaning">
+          <property name="text">
+           <string>Thickness after planing</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_thicknessAfterPlaning</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_thicknessAfterPlaning">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>27.500000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_widthAfterPlaning">
+          <property name="text">
+           <string>Width after planing</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_widthAfterPlaning</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_widthAfterPlaning">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>97.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_cuttingAmountBottom">
+          <property name="text">
+           <string>Cutting amount bottom</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_cuttingAmountBottom</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_cuttingAmountBottom">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>5.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_cuttingAmountSide">
+          <property name="text">
+           <string>Cutting amount side</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_cuttingAmountSide</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_cuttingAmountSide">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="value">
+           <double>5.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_planedPieces">
+          <property name="text">
+           <string>Planed pieces</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_planedPieces</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QSpinBox" name="spinBox_planedPieces">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhFormattedNumbersOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers</set>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Total planing width</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_totalPlaningWidth</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_totalPlaningWidth">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>300.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="2">
+         <widget class="QGraphicsView" name="graphicsView_planing">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboBox_woodDimensions">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_selectedPlaningSize">
+          <property name="text">
+           <string>Selected planing size (mm)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_jointing">
+       <attribute name="title">
+        <string>Jointing</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_packetingPieces">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Packeting pieces</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_maxWidthOfPacket">
+             <property name="text">
+              <string>Max width of packet</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_maxWidthOfPacket</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_maxWidthOfPacket">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> mm</string>
+             </property>
+             <property name="maximum">
+              <number>600</number>
+             </property>
+             <property name="value">
+              <number>563</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_piecesInPacket">
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
+             </property>
+             <property name="text">
+              <string>Pieces in packet</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_piecesInPacket</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBox_piecesInPacket">
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string/>
+             </property>
+             <property name="maximum">
+              <number>40</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_widthOfPacket">
+             <property name="text">
+              <string>Width of packet</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_widthOfPacket</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="spinBox_widthOfPacket">
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> mm</string>
+             </property>
+             <property name="maximum">
+              <number>600</number>
+             </property>
+             <property name="value">
+              <number>550</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_gluing">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string extracomment="Finger joint gluing"/>
+          </property>
+          <property name="statusTip">
+           <string extracomment="Finger joint gluing"/>
+          </property>
+          <property name="title">
+           <string extracomment="Finger joint gluing">Glue spreader</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_2">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_gluePressure">
+             <property name="text">
+              <string>Glue pressure</string>
+             </property>
+             <property name="buddy">
+              <cstring>doubleSpinBox_gluePressure</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_gluePressure">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> bar</string>
+             </property>
+             <property name="minimum">
+              <double>0.100000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>5.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>3.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_gluePressureRatio">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> bar/m</string>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>19</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_gluePressureRatio">
+             <property name="text">
+              <string>Glue pressure ratio</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_gluePressureRatio</cstring>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_press">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Press</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_7">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_pressPressureRatio">
+             <property name="text">
+              <string>Press pressure ratio</string>
+             </property>
+             <property name="buddy">
+              <cstring>doubleSpinBox_pressPressureRatio</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_pressPressureRatio">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> bar/cm2</string>
+             </property>
+             <property name="decimals">
+              <number>2</number>
+             </property>
+             <property name="minimum">
+              <double>0.100000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>10.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="value">
+              <double>1.900000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_pressPressure">
+             <property name="text">
+              <string>Press pressure</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinBox_pressPressure</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBox_pressPressure">
+             <property name="inputMethodHints">
+              <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string> bar</string>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>300</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_packaging">
+       <attribute name="title">
+        <string>Packaging</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_maxPackageWidth">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Max package width</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_maxPackageWidth</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_totalLengthInPackage">
+          <property name="text">
+           <string>Total length in package</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_piecesInLine">
+          <property name="text">
+           <string>Pieces in line</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_piecesInLine</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QSpinBox" name="spinBox_linesInPackage">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::UpDownArrows</enum>
+          </property>
+          <property name="suffix">
+           <string/>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>70</number>
+          </property>
+          <property name="value">
+           <number>36</number>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_maxPackageHeight">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Max package height</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_maxPackageHeight</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_packages">
+          <property name="text">
+           <string>Packages</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_piecesInPackage">
+          <property name="text">
+           <string>Pieces in package</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_piecesInPackage</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="label_packageVolume">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Package volume</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_packageVolume</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_linesInPackage">
+          <property name="text">
+           <string>Lines in package</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_linesInPackage</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_totalPieces">
+          <property name="text">
+           <string>Total pieces</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="radioButton_fullPackages">
+          <property name="text">
+           <string>Full packages</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="label_packageHeight">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Package height</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_packageHeight</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="radioButton_sameSizePackages">
+          <property name="text">
+           <string>Same size packages</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_packageLength">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Package length</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_packageLength</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_packageWidth">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Package width</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_packageWidth</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QLabel" name="label_packageMass">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Package mass</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_packageMass</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QSpinBox" name="spinBox_maxLinesInPackage">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>900</number>
+          </property>
+          <property name="value">
+           <number>36</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_totalPieces">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>90000</number>
+          </property>
+          <property name="value">
+           <number>2000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_maxPackageWidth">
+          <property name="currentText">
+           <string>1100</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>1100</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>800</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1200</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_maxPackageHeight">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string/>
+          </property>
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+          <property name="singleStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>1013</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_piecesInLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::UpDownArrows</enum>
+          </property>
+          <property name="suffix">
+           <string/>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>60</number>
+          </property>
+          <property name="value">
+           <number>11</number>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_packages">
+          <property name="suffix">
+           <string/>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_packageLength">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::UpDownArrows</enum>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <number>7000</number>
+          </property>
+          <property name="singleStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>3200</number>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_packageWidth">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <number>1300</number>
+          </property>
+          <property name="singleStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_packageHeight">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+          <property name="singleStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_piecesInPackage">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> pcs</string>
+          </property>
+          <property name="prefix">
+           <string/>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_totalLengthInPackage">
+          <property name="suffix">
+           <string> m</string>
+          </property>
+          <property name="maximum">
+           <number>9000</number>
+          </property>
+          <property name="value">
+           <number>1500</number>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="1" colspan="2">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_packageVolume">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> m3</string>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="1" colspan="2">
+         <widget class="QSpinBox" name="spinBox_packageMass">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> kg</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>9000</number>
+          </property>
+          <property name="value">
+           <number>2000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="18" column="0" colspan="3">
+         <widget class="QGraphicsView" name="graphicsView_packaging">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>304</height>
+           </size>
+          </property>
+          <property name="baseSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <widget class="QSpinBox" name="spinBox_maxPackageWidth">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>815</y>
+          <width>315</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+        </property>
+        <property name="wrapping">
+         <bool>false</bool>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="keyboardTracking">
+         <bool>false</bool>
+        </property>
+        <property name="suffix">
+         <string/>
+        </property>
+        <property name="maximum">
+         <number>1300</number>
+        </property>
+        <property name="singleStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>1100</number>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_gluing">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string extracomment="Basic gluing">Gluing</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0">
+         <widget class="QRadioButton" name="radioButton_seamIsWidth">
+          <property name="text">
+           <string>Glued seam is width</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QRadioButton" name="radioButton_seamIsThickness">
+          <property name="text">
+           <string>Glued seam is thickness</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_maxWidthInPress">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Max width in press</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_maxWidthInPress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spinBox_maxWidthInPress">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>1360</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_gluingPressPressureRatio">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>Pressure ratio</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_gluingPressPressureRatio</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_gluingPressPressureRatio">
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhDialableCharactersOnly|Qt::ImhDigitsOnly|Qt::ImhNoEditMenu|Qt::ImhNoPredictiveText|Qt::ImhNoTextHandles|Qt::ImhPreferNumbers|Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="suffix">
+           <string> bar/mm</string>
+          </property>
+          <property name="value">
+           <double>2.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_piecesGluedTogether">
+          <property name="text">
+           <string>Pieces glued together</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_piecesGluedTogether</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="spinBox_piecesGluedTogether">
+          <property name="minimum">
+           <number>2</number>
+          </property>
+          <property name="maximum">
+           <number>99</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_gluingPressPressure">
+          <property name="text">
+           <string>Press pressure</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_gluingPressPressure</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSpinBox" name="spinBox_gluingPressPressure">
+          <property name="suffix">
+           <string> bar</string>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>300</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_maxPiecesInPress">
+          <property name="text">
+           <string>Max pieces in press</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_maxPiecesInPress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="spinBox_maxPiecesInPress">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_gluedBoardWidth">
+          <property name="text">
+           <string>Glued board width</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_gluedBoardWidth</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_gluedBoardWidth">
+          <property name="suffix">
+           <string> mm</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>2000.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>10.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="maxGluedBoardsInPress">
+          <property name="text">
+           <string>Max glued boards in press</string>
+          </property>
+          <property name="buddy">
+           <cstring>spinBox_maxGluedBoardsInPress</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QSpinBox" name="spinBox_maxGluedBoardsInPress">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_maxTotalGlueAreaInGluing">
+          <property name="text">
+           <string>Max total glue area</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_maxTotalGlueAreaInGluing</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_maxTotalGlueAreaInGluing">
+          <property name="suffix">
+           <string> m2</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>2.500000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_totalGlueAreaInGluing">
+          <property name="text">
+           <string>Total glue area</string>
+          </property>
+          <property name="buddy">
+           <cstring>doubleSpinBox_totalGlueAreaInGluing</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QDoubleSpinBox" name="doubleSpinBox_totalGlueAreaInGluing">
+          <property name="suffix">
+           <string> m2</string>
+          </property>
+          <property name="minimum">
+           <double>0.100000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>10.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>2.400000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <widget class="QGraphicsView" name="graphicsView_gluing">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>824</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlaning">
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_File"/>
+   </widget>
+   <widget class="QMenu" name="menuConstants_editable">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionConstants_editable"/>
+    <addaction name="actionShow_drawings"/>
+   </widget>
+   <addaction name="menuPlaning"/>
+   <addaction name="menuConstants_editable"/>
+  </widget>
+  <action name="action_File">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionConstants_editable">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Constants editable</string>
+   </property>
+  </action>
+  <action name="actionShow_drawings">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Show drawings</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_maxPackageHeight</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>209</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>doubleSpinBox_pressPressureRatio</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_maxWidthInPress</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_gluePressureRatio</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_maxPackageWidth</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>57</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>doubleSpinBox_gluingPressPressureRatio</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>383</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConstants_editable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>spinBox_maxWidthOfPacket</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionShow_drawings</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>graphicsView_planing</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionShow_drawings</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>graphicsView_packaging</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>688</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionShow_drawings</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>graphicsView_gluing</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_maxPackageWidth</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>spinBox_maxPackageWidth</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
